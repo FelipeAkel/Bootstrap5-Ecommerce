@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="description" content="Praticando recursos de Boostrap 5, elaborando um E-Commerce.">
+    <meta name="keywords" content="e-commerce, loja virtual">
+    <meta name="copyright" content="© 2024 Felipe Akel Carvalho Florentino" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>E-Commerce</title>
 
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer></script>
 </head>
+
 <body>
-    <h1>Hello Word</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Akel Time</a>
+            
+            <div id="navbar-items">
+                <div></div>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input type="search" class="form-control me-2" placeholder="Pesquisar relógio" aris-label="Search">
+                    <button type="submit" class="btn secondary-bg-color">Pesquisar</button>
+                </form>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                    <span class="qty-info">5</span>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                    <span class="qty-info">8</span>
+                </li>
+                <li class="nav-item" id="bag-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-bag"></i>
+                        <b>R$ 1498,95</b>
+                    </a>
+                    <span class="qty-info">12</span>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <!-- SLIDE SHOW -->
+    <div class="container" id="banners-container">
+
+    
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+            <div class="carousel-caption primary-bg-color">
+                <h5>Relógios de luxo</h5>
+                <p>Relógios para qualquer situação e com sua personalidade.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" class="d-block w-100 img-fluid" alt=" Banner 2">
+            <div class="carousel-caption primary-bg-color">
+                <h5>Linha Importada</h5>
+                <p>Conheça os melhores relógios suiços, com pronta entrega.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
+            <div class="carousel-caption primary-bg-color">
+                <h5>Nova Coleção</h5>
+                <p>Adquira essa nova coleção e fique na moda.</p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container" id="mini-banners">
+        <div class="row justify-content-around">
+          <div class="col-12 dark-bg-color" id="mini-banner-1">
+            <h2>Nova Coleção</h2>
+            <img src="img/relogio1.png" alt="Relógio 1">
+            <a href="#">Compre Agora</a>
+          </div>
+          <div class="col-12 secondary-bg-color" id="mini-banner-2">
+            <h2>Promoções</h2>
+            <img src="img/relogio2.png" alt="Relógio 1">
+            <a href="#">Compre Agora</a>
+          </div>
+          <div class="col-12 light-bg-color" id="mini-banner-3">
+            <h2 class="secondary-color">Edição Limitada</h2>
+            <a href="#">Compre Agora</a>
+            <img src="img/relogio3.png" alt="Relógio 1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM SLIDE SHOW -->
 </body>
+
 </html>
