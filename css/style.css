@@ -15,12 +15,24 @@ body {
     background-color: #c09578;
 }
 
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB
+}
+
 .primary-color {
     color: #c09578;
 }
 
 .secondary-color {
     color: #c09578;
+}
+
+.light-color {
+    color: #FCF5EB
 }
 
 /* NAVBAR */
@@ -137,3 +149,150 @@ body {
     font-size: 1.5em;
 }
 
+/* BANNER */
+#banners-container {
+    padding: 0;
+}
+
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+@media(min-width: 768px){
+    #slider .carousel-caption,
+    #slide img {
+        width: 600px;
+    }
+
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 4em;
+    }
+}
+
+/* MINI BANNERS */
+#mini-banners {
+    margin-top: -3em;
+    z-index: 10;
+}
+
+#mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(min-width: 768px) {
+    #mini-banners .col-12 {
+        max-width: 30%;
+    }
+}
+
+#mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#mini-banners .col-12 a {
+    font-weight: bold;
+    color: #fff;
+    font-size: .8rem;
+    transition: .5s;
+}
+
+#mini-banners .col-12 a:hover {
+    color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover {
+    color: #c09578
+}
+
+#mini-banners #mini-banner-3 a {
+    color: #101010;
+}
+
+#mini-banners #mini-banner-3 a:hover {
+    color: #c09578
+}
+
+/* BEST SELLERS - MAIS VENDIDOS */
+#best-sellers {
+    padding: 4em 0;
+}
+
+#best-sellers .row {
+    margin: 0;
+}
+
+#best-sellers .col-md-3 {
+    padding: 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@madia(min-width: 768px){
+    .title {
+        text-align: left;
+    }
+}
+
+.card {
+    text-align: center;
+    border-radius: 0;
+}
+
+.card img {
+    width: 140px;
+    margin: 2em auto;
+}
+
+.card .card-category {
+    font-size: .8rem;
+}
+
+.card .card-text {
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: transparent;
+    border-color: #c09578;
+}
+
+.btn:hover {
+    background-color: #c09578;
+    border-color: #C09578;
+}
