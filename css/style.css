@@ -165,7 +165,8 @@ body {
     font-size: 1.8em;
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
+
     #slider .carousel-caption,
     #slide img {
         width: 600px;
@@ -262,7 +263,7 @@ body {
     text-align: center;
 }
 
-@madia(min-width: 768px){
+@madia(min-width: 768px) {
     .title {
         text-align: left;
     }
@@ -280,6 +281,19 @@ body {
 
 .card .card-category {
     font-size: .8rem;
+    color: #fff;
+}
+
+.card-category {
+    color: #fff;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-text {
+    color: #C09578;
 }
 
 .card .card-text {
@@ -295,4 +309,203 @@ body {
 .btn:hover {
     background-color: #c09578;
     border-color: #C09578;
+}
+
+/* BOTTOM BANNER */
+#bottom-banner {
+    background-color: #101010;
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#bottom-banner .offer-subtitle,
+#bottom-banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#bottom-banner btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+#bottom-banner img {
+    max-width: 175px;
+}
+
+@media(min-width: 768px) {
+    #bottom-banner h2 {
+        font-size: 6em;
+    }
+}
+
+/* NEW PRODUCT */
+
+#new-products {
+    margin-bottom: 5rem;
+}
+
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+}
+
+#new-products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}
+
+/* GALLERY */
+#gallery .image-container {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    cursor: pointer;
+    transition: .5s;
+    border: 3px solid #101010;
+}
+
+#gallery .image-container:hover {
+    border: 3px solid #c09578;
+}
+
+#gallery1 {
+    background-image: url(../img/insta1.jpg);
+}
+
+#gallery2 {
+    background-image: url(../img/insta2.jpg);
+}
+
+#gallery3 {
+    background-image: url(../img/insta3.jpg);
+}
+
+#gallery4 {
+    background-image: url(../img/insta4.jpg);
+}
+
+#gallery5 {
+    background-image: url(../img/insta5.jpg);
+}
+
+#gallery6 {
+    background-image: url(../img/insta6.jpg);
+}
+
+/* FOOTER */
+#footer-links-container {
+    border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    #footer .footer-column {
+        padding: 5em 2em;
+    }
+}
+
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#footer-links-container li {
+    font-size: .8em;
+    text-align: center;
+}
+
+#footer-links-container li a {
+    text-decoration: none;
+    color: #dfdfdf;
+
+}
+
+#footer-links-container li a:hover {
+    color: #C09578;
+    font-weight: bold;
+
+}
+
+#footer-center {
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+    font-weight: 900;
+}
+
+#footer-center .store-phone {
+    color: #c09578;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: -15px;
+}
+
+/* NEWS */
+#newsletter-container {
+    background-color: #101010;
+    border-bottom: 1px solid #626262;
+    text-align: center;
+    padding: 20px;
+}
+
+#news-form {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+#news-form i {
+    font-size: 1.5em;
+}
+
+#news-form .btn {
+    color: #FFF;
+}
+
+#social-container {
+    margin: 20px auto;
+}
+
+#social-container i {
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #626262;
+    transition: .3s;
+}
+
+#social-container i:hover {
+    color: #C09578;
+}
+
+/* COPY */
+#copy-container {
+    text-align: center;
+    padding: 30px;
 }
