@@ -1,4 +1,4 @@
-<p aling="center"><img src="img/outros/bootstrap5-eCommerce.png" width="400" alt="Imagem do Projeto Bootstrap5 E-Commerce"></p>
+<p align="center"><img src="img/outros/bootstrap5-eCommerce.png" width="400" alt="Imagem do Projeto Bootstrap5 E-Commerce"></p>
 
 # Sobre o Projeto Bootstrap5-Ecommerce
 
